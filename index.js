@@ -6,6 +6,7 @@ const port = 8000;
 //use express router to route all requests to router
 app.use('/', require('./routes')) //by default it fetches index.js in routes.
 
+
 app.listen(port, function(err){
     if(err){
         //console.log('Error: ', err);
