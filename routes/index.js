@@ -7,7 +7,7 @@ const homeController = require('../controllers/home_controller');
 console.log('router loaded');
 
 
-router.get('/', homeController.home2);
+router.get('/', homeController.home);
 //router.get('/home2', homeController.home2);
 router.use('/users', require('./users'));
 
