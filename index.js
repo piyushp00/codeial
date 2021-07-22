@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
 const port = 8000;
+const expressLayouts = require('express-ejs-layouts');
 
+
+//layout
+app.use(expressLayouts);
 
 //use express router to route all requests to router
 app.use('/', require('./routes')) //by default it fetches index.js in routes.
