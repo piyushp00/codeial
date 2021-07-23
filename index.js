@@ -31,7 +31,7 @@ app.set("layout extractScripts", true);
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-// encrypt using session cookie
+// create and encrypt user info in session cookie
 app.use(
   session({
     name: "codeial",
