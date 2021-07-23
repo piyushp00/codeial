@@ -3,7 +3,7 @@ const LocalStrategy = require("passport-local").Strategy;
 const User = require("../models/user");
 
 
-//authentication using passport
+//! authentication using passport
 passport.use(
   new LocalStrategy(
     {
@@ -31,13 +31,13 @@ passport.use(
 );
 
 
-//serializing the user to decide which key is to be kept in the cookies
+//! serializing the user to decide which key is to be kept in the cookies
 passport.serializeUser(function (user, done){
   done(null, user.id);  //store user id in encrypted formatin the cookies
 });
 
 
-//deserializing the user from the key in the cookie
+//! deserializing the user from the key in the cookie
 passport.deserializeUser(function(id, done){
   User.findById(id, function(error, user){
     if(error){
