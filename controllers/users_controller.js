@@ -1,5 +1,6 @@
 const User = require('../models/user');
 
+
 //render the profile page
 module.exports.profile = function(req, res){
     if(req.cookies.user_id){
@@ -26,12 +27,14 @@ module.exports.signUp = function(req, res){
     });
 }
 
+
 //render the sign in page
 module.exports.signIn = function(req, res){
     res.render('user_sign_in', {
         title: 'Gravitas | Sign In'
     });
 }
+
 
 //get the sign up data
 module.exports.create = function(req, res){
@@ -53,6 +56,7 @@ module.exports.create = function(req, res){
         }
     });
 }
+
 
 //sign in and create a session for the users
 module.exports.createSession = function(req, res){
@@ -80,6 +84,7 @@ module.exports.createSession = function(req, res){
         }
     });
 }
+
 
 //sign out and delete the session
 module.exports.deleteSession = function(req, res){
