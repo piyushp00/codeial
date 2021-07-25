@@ -1,0 +1,34 @@
+header {
+    font-family: sans-serif;
+    height: 55px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+ul {
+    padding-left: 0px;
+    margin: 0px;
+
+    li {
+        display: inline-block;
+
+        margin-right: 10px;
+        padding: 6px 10px;
+        border-radius: 5px;
+        background-color: #e4e6eb;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            background-color: rgb(221, 221, 221);
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

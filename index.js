@@ -13,8 +13,7 @@ const sassMiddleware = require("node-sass-middleware");
 
 
 //! middlewares
-
-//css preprocessor middleware
+  //css preprocessor middleware
 app.use(sassMiddleware({
   src: './assets/scss',
   dest: './assets/css',
