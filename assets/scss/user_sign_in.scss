@@ -3,11 +3,12 @@ header {
 }
 
 #layout-footer {
-  display: none;
+    background-color:#fed4e7;
+    opacity: 0.7;
 }
 
 body {
-  margin: 0;
+//   margin: 0;
   display: flex;
   background: url("../images/signin-background.png");
   background-position: center;
@@ -31,7 +32,7 @@ body {
   width: 60%;
   // min-width:70%;
   border-radius: 20px;
-  margin: 80px auto;
+  margin: 50px auto;
   padding: 25px;
 
   #app-title {
@@ -40,11 +41,12 @@ body {
     font-weight: bold;
     padding: 0;
     margin: 0;
+    margin-top: 45px;
     text-align: left;
     font-family: "Rubik", sans-serif;
     .fa-circle {
       margin-left: 2px;
-      
+
       font-size: 5px;
     }
   }
@@ -64,10 +66,16 @@ body {
       width: 500px;
 
       label {
-        color: rgb(58, 58, 58);
+        color: #6e6e6e;
         text-align: left;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+        #frgt{
+         
+            text-align: right;
+            margin-left: 125px;
+            
+        }
       }
 
       input {
@@ -79,6 +87,8 @@ body {
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
+        max-height: 50px;
+
         &:focus {
           outline: none;
           border-radius: 15px;
@@ -87,33 +97,51 @@ body {
         }
       }
 
-      button {
-        display: inline-block;
+      input[type="email"] {
+        font-size: 1rem;
+      }
+
+      input[type="password"] {
+        font-size: 1rem;
+      }
+
+      button{
+        
+        display: block;
         font-size: 1.1rem;
-        width: 150px;
-        height: 43px;
-        margin: 0;
-        margin-top: 25px;
+        width: 160px;
+        height: 45px;
+        border: transparent;
+        margin-top: 40px;
         border-radius: 15px;
         color: white;
-        background-color: black;
-        border: transparent;
+        background-color: #3f7cf0;
+        opacity: 1;
+        z-index: 3;
+        text-align: center;
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 0.2s;
+        &:hover{
+            background-color:rgb(250, 68, 129);
+        }
+
       }
 
       span {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         // position: relative;
         font-family: sans-serif;
         line-height: 0.9;
         // float: right;
-        // margin-left:64%;
+        margin-left:70%;
         margin-top: -35px;
-        text-align: right;
-        a{
-            color: rgb(250, 68, 129);
-            text-decoration: none;
+        // text-align: right;
+        a {
+          color: #3f7cf0;
+          text-decoration: none;
         }
-        }
+      }
     }
   }
 }

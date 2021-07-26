@@ -1,79 +1,109 @@
 header {
-  display: none; }
+  display: none;
+}
 
 #layout-footer {
   background-color: #fed4e7;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
 body {
+  //   margin: 0;
   display: flex;
   background: url("../images/signin-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  // width: 50%;
   height: 100vh;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+
+  // position: relative;
+}
 
 #sign-in-ctn {
-  background-color: #f3eded;
+  // display: flex;
+  // flex-direction: column;
+  background-color: rgb(243, 237, 237);
   opacity: 0.95;
   height: 550px;
   max-height: 550px;
   width: 60%;
+  // min-width:70%;
   border-radius: 20px;
   margin: 50px auto;
-  padding: 25px; }
-  #sign-in-ctn #app-title {
-    color: #fa4481;
+  padding: 25px;
+
+  #app-title {
+    color: rgb(250, 68, 129);
     font-size: 2rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
     margin-top: 45px;
     text-align: left;
-    font-family: "Rubik", sans-serif; }
-    #sign-in-ctn #app-title .fa-circle {
+    font-family: "Rubik", sans-serif;
+    .fa-circle {
       margin-left: 2px;
-      font-size: 5px; }
-  #sign-in-ctn h1 {
+
+      font-size: 5px;
+    }
+  }
+
+  h1 {
     font-family: "Rubik", sans-serif;
     font-size: 4rem;
-    text-align: left; }
-  #sign-in-ctn #sign-in-form {
-    display: flex; }
-    #sign-in-ctn #sign-in-form form {
+    text-align: left;
+  }
+
+  #sign-in-form {
+    display: flex;
+
+    form {
       display: flex;
       flex-direction: column;
-      width: 500px; }
-      #sign-in-ctn #sign-in-form form label {
+      width: 500px;
+
+      label {
         color: #6e6e6e;
         text-align: left;
         margin-bottom: 7px;
-        margin-top: 7px; }
-        #sign-in-ctn #sign-in-form form label #frgt {
+        margin-top: 7px;
+        #frgt {
           text-align: right;
-          margin-left: 125px; }
-      #sign-in-ctn #sign-in-form form input {
+          margin-left: 125px;
+        }
+      }
+
+      input {
         text-align: left;
         padding: 12px;
         border-radius: 15px;
         margin-top: 5px;
-        border: 2px solid #cfcfcf;
+        border: 2px solid rgb(207, 207, 207);
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
-        max-height: 50px; }
-        #sign-in-ctn #sign-in-form form input:focus {
+        max-height: 50px;
+
+        &:focus {
           outline: none;
           border-radius: 15px;
-          border-color: #3d9ceb;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; }
-      #sign-in-ctn #sign-in-form form input[type="email"] {
-        font-size: 1rem; }
-      #sign-in-ctn #sign-in-form form input[type="password"] {
-        font-size: 1rem; }
-      #sign-in-ctn #sign-in-form form button {
+          border-color: rgb(61, 156, 235);
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+        }
+      }
+
+      input[type="email"] {
+        font-size: 1rem;
+      }
+
+      input[type="password"] {
+        font-size: 1rem;
+      }
+
+      button {
         display: block;
         font-size: 1.1rem;
         width: 160px;
@@ -88,18 +118,30 @@ body {
         text-align: center;
         cursor: pointer;
         transition-property: background-color;
-        transition-duration: 0.2s; }
-        #sign-in-ctn #sign-in-form form button:hover {
-          background-color: #fa4481; }
-      #sign-in-ctn #sign-in-form form span {
+        transition-duration: 0.2s;
+        &:hover {
+          background-color: rgb(250, 68, 129);
+        }
+      }
+
+      span {
         font-size: 0.88rem;
+        // position: relative;
         font-family: sans-serif;
         line-height: 0.9;
+        // float: right;
         margin-left: 70%;
-        margin-top: -35px; }
-        #sign-in-ctn #sign-in-form form span a {
+        margin-top: -35px;
+        // text-align: right;
+        a {
           color: #3f7cf0;
-          text-decoration: none; }
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
 .ml-20 {
-  margin-left: 15px; }
+  margin-left: 15px;
+}

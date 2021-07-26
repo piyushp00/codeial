@@ -18,7 +18,7 @@ module.exports.signUp = function(req, res){
     }
 
     res.render('user_sign_up', {
-        title: 'Gravitas | Sign Up'
+        title: 'Sign Up | Ghost'
     });
 }
 
@@ -32,7 +32,7 @@ module.exports.signIn = function(req, res){
     }
 
     res.render('user_sign_in', {
-        title: 'Gravitas | Sign In'
+        title: 'Sign In | Ghost'
     });
 }
 
