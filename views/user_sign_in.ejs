@@ -1,7 +1,25 @@
-<h1>Sign In</h1>
+<link rel="stylesheet" type="text/css" href="/css/user_sign_in.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<div id="sign-in-ctn">
+    <p id="app-title"><i class="fas fa-ghost"></i> ghost<i class="fas fa-circle"></i></p>
+    <h1>Sign In</h1>
 
-<form action="/users/create-session" method="post">
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit" value="Sign In">
-</form>
+    <div id="sign-in-form">
+        <form action="/users/create-session" method="post">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+            <span><a href="/users/sign-up">No Account?<br>Sign Up</b></a></span>
+        </form>
+        
+    </div>
+
+</div>

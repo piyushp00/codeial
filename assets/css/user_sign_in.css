@@ -1,0 +1,89 @@
+header {
+  display: none; }
+
+#layout-footer {
+  display: none; }
+
+body {
+  margin: 0;
+  display: flex;
+  background: url("../images/signin-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Rubik", sans-serif; }
+
+#sign-in-ctn {
+  background-color: #f3eded;
+  opacity: 0.95;
+  height: 550px;
+  max-height: 550px;
+  width: 60%;
+  border-radius: 20px;
+  margin: 80px auto;
+  padding: 25px; }
+  #sign-in-ctn #app-title {
+    color: #fa4481;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-family: "Rubik", sans-serif; }
+    #sign-in-ctn #app-title .fa-circle {
+      margin-left: 2px;
+      font-size: 5px; }
+  #sign-in-ctn h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 4rem;
+    text-align: left; }
+  #sign-in-ctn #sign-in-form {
+    display: flex; }
+    #sign-in-ctn #sign-in-form form {
+      display: flex;
+      flex-direction: column;
+      width: 500px; }
+      #sign-in-ctn #sign-in-form form label {
+        color: #3a3a3a;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-top: 5px; }
+      #sign-in-ctn #sign-in-form form input {
+        text-align: left;
+        padding: 12px;
+        border-radius: 15px;
+        margin-top: 5px;
+        border: 2px solid #cfcfcf;
+        box-shadow: none;
+        transition-property: border-color;
+        transition-duration: 0.2s; }
+        #sign-in-ctn #sign-in-form form input:focus {
+          outline: none;
+          border-radius: 15px;
+          border-color: #3d9ceb;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; }
+      #sign-in-ctn #sign-in-form form button {
+        display: inline-block;
+        font-size: 1.1rem;
+        width: 150px;
+        height: 43px;
+        margin: 0;
+        margin-top: 25px;
+        border-radius: 15px;
+        color: white;
+        background-color: black;
+        border: transparent; }
+      #sign-in-ctn #sign-in-form form span {
+        font-size: 0.9rem;
+        font-family: sans-serif;
+        line-height: 0.9;
+        margin-top: -35px;
+        text-align: right; }
+        #sign-in-ctn #sign-in-form form span a {
+          color: #fa4481;
+          text-decoration: none; }
+
+.ml-20 {
+  margin-left: 15px; }

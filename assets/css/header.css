@@ -1,26 +1,32 @@
-header {
-  font-family: sans-serif;
-  height: 55px;
-  background-color: #252525;
+#layout-header nav {
   display: flex;
-  color: white;
   justify-content: space-between;
+  padding: 0 40px;
   align-items: center;
-  padding: 0px 40px; }
-
-ul {
-  padding-left: 0px;
-  margin: 0px; }
-  ul li {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 6px 10px;
-    border-radius: 5px;
-    background-color: #e4e6eb;
-    transition: 0.3s ease-in-out; }
-    ul li:hover {
-      background-color: #dddddd; }
-    ul li a {
+  background: #836efc;
+  color: white;
+  height: 50px;
+  box-shadow: 1px 1px 1px 1px lightgrey; }
+  #layout-header nav .mini-logo p {
+    margin: 5px;
+    font-size: 1.6rem;
+    font-weight: bold; }
+  #layout-header nav .auth-links ul {
+    margin: 5% 5px;
+    display: flex; }
+    #layout-header nav .auth-links ul li {
+      margin-right: 10px;
       list-style: none;
-      text-decoration: none;
-      color: black; }
+      margin-right: 10px;
+      padding: 6px 10px;
+      border-radius: 5px;
+      background-color: #cfd0d3;
+      transition: 0.3s ease-in-out; }
+      #layout-header nav .auth-links ul li:hover {
+        background-color: #dddddd; }
+      #layout-header nav .auth-links ul li a {
+        color: black; }
+  #layout-header nav a {
+    color: white;
+    text-decoration: none;
+    list-style: none; }
