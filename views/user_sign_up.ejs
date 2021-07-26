@@ -7,9 +7,9 @@
     href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<div id="sign-in-ctn">
+<div id="sign-up-ctn">
     <p id="app-title"><i class="fas fa-ghost"></i> ghost<i class="fas fa-circle"></i></p>
-    <h1>Sign In</h1>
+    <h1>Sign Up</h1>
     <div id="sign-in-form">
         <form action="/users/create" method="post">
             <input type="text" name="name" placeholder="Name" required>
@@ -17,6 +17,7 @@
             <input type="password" name="password" placeholder="Password" required>
             <input type="password" name="confirm_password" placeholder="Confirm Password" required>
             <button type="submit">Sign Up</button>
+            <span><a href="/users/sign-in">or Sign In</a></span>
         </form>
     </div>
 </div>

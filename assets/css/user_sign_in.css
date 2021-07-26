@@ -2,12 +2,12 @@ header {
   display: none; }
 
 #layout-footer {
-  background-color: #fed4e7;
+  background-color: #d6d6d6;
   opacity: 0.7; }
 
 body {
   display: flex;
-  background: url("../images/signin-background.png");
+  background: url("../images/cool-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,10 +20,11 @@ body {
   opacity: 0.95;
   height: 550px;
   max-height: 550px;
-  width: 60%;
+  width: 65%;
   border-radius: 20px;
   margin: 50px auto;
-  padding: 25px; }
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
   #sign-in-ctn #app-title {
     color: #fa4481;
     font-size: 2rem;
@@ -38,7 +39,7 @@ body {
       font-size: 5px; }
   #sign-in-ctn h1 {
     font-family: "Rubik", sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: left; }
   #sign-in-ctn #sign-in-form {
     display: flex; }
@@ -54,7 +55,10 @@ body {
         #sign-in-ctn #sign-in-form form label #frgt {
           text-align: right;
           margin-left: 125px; }
+          #sign-in-ctn #sign-in-form form label #frgt:hover {
+            text-decoration: underline; }
       #sign-in-ctn #sign-in-form form input {
+        font-size: 1rem;
         text-align: left;
         padding: 12px;
         border-radius: 15px;
@@ -69,10 +73,6 @@ body {
           border-radius: 15px;
           border-color: #3d9ceb;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; }
-      #sign-in-ctn #sign-in-form form input[type="email"] {
-        font-size: 1rem; }
-      #sign-in-ctn #sign-in-form form input[type="password"] {
-        font-size: 1rem; }
       #sign-in-ctn #sign-in-form form button {
         display: block;
         font-size: 1.1rem;
@@ -82,7 +82,7 @@ body {
         margin-top: 40px;
         border-radius: 15px;
         color: white;
-        background-color: #3f7cf0;
+        background-color: #836efc;
         opacity: 1;
         z-index: 3;
         text-align: center;
@@ -95,11 +95,10 @@ body {
         font-size: 0.88rem;
         font-family: sans-serif;
         line-height: 0.9;
-        margin-left: 70%;
+        margin-left: 67%;
         margin-top: -35px; }
         #sign-in-ctn #sign-in-form form span a {
           color: #3f7cf0;
           text-decoration: none; }
-
-.ml-20 {
-  margin-left: 15px; }
+          #sign-in-ctn #sign-in-form form span a:hover {
+            text-decoration: underline; }

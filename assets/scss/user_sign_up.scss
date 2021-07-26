@@ -3,14 +3,15 @@ header {
 }
 
 #layout-footer {
-  background-color: #fed4e7;
+  background-color: #e6e6e6;
   opacity: 0.7;
 }
 
 body {
   //   margin: 0;
   display: flex;
-  background: url("../images/signin-background.png");
+  // background-color:#f1f1f1;
+  background: url("../images/cool-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,18 +23,19 @@ body {
   // position: relative;
 }
 
-#sign-in-ctn {
+#sign-up-ctn {
   // display: flex;
   // flex-direction: column;
   background-color: rgb(243, 237, 237);
   opacity: 0.95;
   height: 550px;
   max-height: 550px;
-  width: 60%;
+  width: 65%;
   // min-width:70%;
   border-radius: 20px;
   margin: 50px auto;
   padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
   #app-title {
     color: rgb(250, 68, 129);
@@ -41,7 +43,7 @@ body {
     font-weight: bold;
     padding: 0;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 30px;
     text-align: left;
     font-family: "Rubik", sans-serif;
     .fa-circle {
@@ -53,7 +55,7 @@ body {
 
   h1 {
     font-family: "Rubik", sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: left;
   }
 
@@ -77,6 +79,7 @@ body {
       }
 
       input {
+        font-size: 1rem;
         text-align: left;
         padding: 12px;
         border-radius: 15px;
@@ -95,13 +98,7 @@ body {
         }
       }
 
-      input[type="email"] {
-        font-size: 1rem;
-      }
-
-      input[type="password"] {
-        font-size: 1rem;
-      }
+     
 
       button {
         display: block;
@@ -130,12 +127,16 @@ body {
         font-family: sans-serif;
         line-height: 0.9;
         // float: right;
-        margin-left: 70%;
-        margin-top: -35px;
-        // text-align: right;
+        margin-left: 64%;
+        margin-top: -30px;
+        // text-align: left;
         a {
           color: #3f7cf0;
           text-decoration: none;
+          word-wrap: nowrap;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
