@@ -1,13 +1,27 @@
 //export
-module.exports.home = function(req, res) {
-    
-    //console.log(req.cookies);
-    //res.cookie('user_id', 25);
+const passport = require("passport");
+const User = require("../models/user");
+const Post = require("../models/post");
 
-    return res.render('home', {
-        title: "Home"
-    });
-}
+module.exports.home = function (req, res) {
+  //console.log(req.cookies);
+  //res.cookie('user_id', 25);
+
+  Post.find({}, function (error, posts) {
+      if (error) {
+        console.log("error in fetching posts from db");
+        return;
+      }
+
+      return res.render("home", {
+        title: "Home",
+        user_posts: posts,
+      });
+    }
+  );
+
+  
+};
 
 /*
 module.exports.home2 = function(req, res){
