@@ -17,7 +17,6 @@ body {
 
 #sign-up-ctn {
   background-color: #f3eded;
-  opacity: 0.95;
   height: 550px;
   max-height: 550px;
   width: 65%;
@@ -85,8 +84,8 @@ body {
         z-index: 3;
         text-align: center;
         cursor: pointer;
-        transition-property: background-color;
-        transition-duration: 0.2s; }
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; }
         #sign-up-ctn #sign-up-form form button:hover {
           background-color: #fa4481; }
       #sign-up-ctn #sign-up-form form span {

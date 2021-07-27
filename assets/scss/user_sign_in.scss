@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   // width: 50%;
-  height: 100vh;
+  height: 70vh;
   font-family: "Rubik", sans-serif;
 
   // position: relative;
@@ -27,7 +27,7 @@ body {
   // display: flex;
   // flex-direction: column;
   background-color: rgb(243, 237, 237);
-  opacity: 0.95;
+  // opacity: 0.95;
   height: 550px;
   max-height: 550px;
   width: 65%;
@@ -49,7 +49,6 @@ body {
     font-family: "Rubik", sans-serif;
     .fa-circle {
       margin-left: 2px;
-
       font-size: 5px;
     }
   }
@@ -113,13 +112,15 @@ body {
         color: white;
         // background-color: #3f7cf0;
         background-color: #836efc;
-
-        opacity: 1;
+        
+        
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         z-index: 3;
         text-align: center;
         cursor: pointer;
-        transition-property: background-color;
-        transition-duration: 0.2s;
+        // transition-property: background-color;
+        // transition-duration: 0.2s;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         &:hover {
           background-color: rgb(250, 68, 129);
         }
