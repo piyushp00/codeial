@@ -43,12 +43,11 @@ body {
     font-weight: bold;
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 5px;
     text-align: left;
     font-family: "Rubik", sans-serif;
     .fa-circle {
       margin-left: 2px;
-
       font-size: 5px;
     }
   }
@@ -59,7 +58,7 @@ body {
     text-align: left;
   }
 
-  #sign-in-form {
+  #sign-up-form {
     display: flex;
 
     form {
@@ -83,7 +82,7 @@ body {
         text-align: left;
         padding: 12px;
         border-radius: 15px;
-        margin-top: 5px;
+        margin-top: 10px;
         border: 2px solid rgb(207, 207, 207);
         box-shadow: none;
         transition-property: border-color;
@@ -109,7 +108,8 @@ body {
         margin-top: 40px;
         border-radius: 15px;
         color: white;
-        background-color: #3f7cf0;
+        // background-color: #3f7cf0;
+        background-color: #836efc;
         opacity: 1;
         z-index: 3;
         text-align: center;
@@ -127,7 +127,7 @@ body {
         font-family: sans-serif;
         line-height: 0.9;
         // float: right;
-        margin-left: 64%;
+        margin-left: 71%;
         margin-top: -30px;
         // text-align: left;
         a {

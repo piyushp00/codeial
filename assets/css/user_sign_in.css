@@ -54,7 +54,7 @@ body {
         margin-top: 7px; }
         #sign-in-ctn #sign-in-form form label #frgt {
           text-align: right;
-          margin-left: 125px; }
+          margin-left: 163px; }
           #sign-in-ctn #sign-in-form form label #frgt:hover {
             text-decoration: underline; }
       #sign-in-ctn #sign-in-form form input {
@@ -95,8 +95,9 @@ body {
         font-size: 0.88rem;
         font-family: sans-serif;
         line-height: 0.9;
-        margin-left: 67%;
-        margin-top: -35px; }
+        margin-left: 71%;
+        margin-top: -35px;
+        text-align: right; }
         #sign-in-ctn #sign-in-form form span a {
           color: #3f7cf0;
           text-decoration: none; }

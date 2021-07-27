@@ -31,7 +31,7 @@ body {
     font-weight: bold;
     padding: 0;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 5px;
     text-align: left;
     font-family: "Rubik", sans-serif; }
     #sign-up-ctn #app-title .fa-circle {
@@ -41,37 +41,37 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 4.5rem;
     text-align: left; }
-  #sign-up-ctn #sign-in-form {
+  #sign-up-ctn #sign-up-form {
     display: flex; }
-    #sign-up-ctn #sign-in-form form {
+    #sign-up-ctn #sign-up-form form {
       display: flex;
       flex-direction: column;
       width: 500px; }
-      #sign-up-ctn #sign-in-form form label {
+      #sign-up-ctn #sign-up-form form label {
         color: #6e6e6e;
         text-align: left;
         margin-bottom: 7px;
         margin-top: 7px; }
-        #sign-up-ctn #sign-in-form form label #frgt {
+        #sign-up-ctn #sign-up-form form label #frgt {
           text-align: right;
           margin-left: 125px; }
-      #sign-up-ctn #sign-in-form form input {
+      #sign-up-ctn #sign-up-form form input {
         font-size: 1rem;
         text-align: left;
         padding: 12px;
         border-radius: 15px;
-        margin-top: 5px;
+        margin-top: 10px;
         border: 2px solid #cfcfcf;
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
         max-height: 50px; }
-        #sign-up-ctn #sign-in-form form input:focus {
+        #sign-up-ctn #sign-up-form form input:focus {
           outline: none;
           border-radius: 15px;
           border-color: #3d9ceb;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; }
-      #sign-up-ctn #sign-in-form form button {
+      #sign-up-ctn #sign-up-form form button {
         display: block;
         font-size: 1.1rem;
         width: 160px;
@@ -80,26 +80,26 @@ body {
         margin-top: 40px;
         border-radius: 15px;
         color: white;
-        background-color: #3f7cf0;
+        background-color: #836efc;
         opacity: 1;
         z-index: 3;
         text-align: center;
         cursor: pointer;
         transition-property: background-color;
         transition-duration: 0.2s; }
-        #sign-up-ctn #sign-in-form form button:hover {
+        #sign-up-ctn #sign-up-form form button:hover {
           background-color: #fa4481; }
-      #sign-up-ctn #sign-in-form form span {
+      #sign-up-ctn #sign-up-form form span {
         font-size: 0.88rem;
         font-family: sans-serif;
         line-height: 0.9;
-        margin-left: 64%;
+        margin-left: 71%;
         margin-top: -30px; }
-        #sign-up-ctn #sign-in-form form span a {
+        #sign-up-ctn #sign-up-form form span a {
           color: #3f7cf0;
           text-decoration: none;
           word-wrap: nowrap; }
-          #sign-up-ctn #sign-in-form form span a:hover {
+          #sign-up-ctn #sign-up-form form span a:hover {
             text-decoration: underline; }
 
 .ml-20 {
