@@ -83,7 +83,7 @@ body {
         padding: 12px;
         border-radius: 15px;
         margin-top: 10px;
-        border: 2px solid rgb(207, 207, 207);
+        border: 2.5px solid rgb(207, 207, 207);
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
@@ -92,7 +92,7 @@ body {
         &:focus {
           outline: none;
           border-radius: 15px;
-          border-color: rgb(61, 156, 235);
+          border-color: rgba(250, 68, 129, 0.8);
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
         }
       }
