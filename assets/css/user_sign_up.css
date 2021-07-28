@@ -60,7 +60,7 @@ body {
         padding: 12px;
         border-radius: 15px;
         margin-top: 10px;
-        border: 2px solid #cfcfcf;
+        border: 2.5px solid #cfcfcf;
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
@@ -68,7 +68,7 @@ body {
         #sign-up-ctn #sign-up-form form input:focus {
           outline: none;
           border-radius: 15px;
-          border-color: #3d9ceb;
+          border-color: rgba(250, 68, 129, 0.8);
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; }
       #sign-up-ctn #sign-up-form form button {
         display: block;
