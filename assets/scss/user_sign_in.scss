@@ -87,7 +87,8 @@ body {
         padding: 12px;
         border-radius: 15px;
         margin-top: 5px;
-        border: 2px solid rgb(207, 207, 207);
+        border: 2.5px solid rgb(207, 207, 207);
+        
         box-shadow: none;
         transition-property: border-color;
         transition-duration: 0.2s;
@@ -96,7 +97,7 @@ body {
         &:focus {
           outline: none;
           border-radius: 15px;
-          border-color: rgb(61, 156, 235);
+          border-color: rgba(250, 68, 129, 0.8);
           box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
         }
       }
@@ -128,13 +129,13 @@ body {
 
       span {
         font-size: 0.88rem;
-        // position: relative;
+        
         font-family: sans-serif;
-        line-height: 0.9;
-        // float: right;
-        margin-left: 71%;
+        line-height: 1;
+        
+        margin-left: 75%;
         margin-top: -35px;
-        text-align: right;
+        // text-align: left;
         a {
           color: #3f7cf0;
           text-decoration: none;
