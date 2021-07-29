@@ -3,8 +3,11 @@ header {
 }
 
 #layout-footer {
-  background-color: #e6e6e6;
+  background-color: #d6d6d6;
   opacity: 0.7;
+  position: fixed;
+  display: flex;
+  width: 100%;
 }
 
 body {
