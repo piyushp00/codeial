@@ -3,10 +3,7 @@ header {
 
 #layout-footer {
   background-color: #d6d6d6;
-  opacity: 0.7;
-  position: fixed;
-  display: flex;
-  width: 100%; }
+  opacity: 0.7; }
 
 body {
   display: flex;
@@ -15,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
   font-family: "Rubik", sans-serif; }
 
 #sign-in-ctn {
