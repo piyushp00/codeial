@@ -32,7 +32,7 @@ module.exports.create = (req, res) => {
 module.exports.destroy = (req, res) => {
   Post.findById(req.params.id, (error, post) => {
     // .id means coverting the object id into string(automatically done by mongoose)
-    if (post.user === req.user.id) {
+    if (post.user == req.user.id) {
       post.remove();
 
       Comment.deleteMany({ post: req.params.id }, (error) => {
