@@ -1,14 +1,17 @@
 #layout-footer {
     font-size: 0.88rem;
-    display: flex;
-    position: fixed;
-    width: 100%;
+    // display: flex;
+    // position: fixed;
+    // width: 100%;
+    position: relative;
     padding: 5px 15px;
     bottom: 0;
     left: 0;
     background: rgb(221, 218, 218);
     justify-content: flex-start;
-    height: 60px;
+    height: 100%;
+    // padding-bottom: 50px;
+    text-align: left;
 
     a {
         color: black;
