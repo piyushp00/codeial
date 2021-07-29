@@ -13,7 +13,7 @@
     </form>
     <% } %>
 
-    <div id="posts-list-container">
+    <div id="posts-list-ctn">
 
         <ul>
 
@@ -21,14 +21,8 @@
                 <li>
                 <!--posts-->
                 <p>
-                    <% if((locals.user) && (locals.user.id == post.user.id)) { %> 
-                        <small>
-                            <a href="/posts/destroy/<%= post.id %> "><i class="far fa-trash-alt"></i></a>
-                        </small>
-                    <% } %>     
                     <%= post.content %>
                     <br>
-
                     <small><%= post.user.name %> </small>
                 </p>
 
