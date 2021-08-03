@@ -1,4 +1,3 @@
-//export
 const passport = require("passport");
 const User = require("../models/user");
 const Post = require("../models/post");
@@ -31,12 +30,16 @@ module.exports.home = function (req, res) {
       },
     })
     .exec(function (error, posts) {
-      return res.render("home", {
-        title: "Ghost | Home",
-        user_posts: posts,
+
+      User.find({}, (error, users) => {
+        return res.render("home", {
+          title: "Ghost | Home",
+          user_posts: posts,
+          all_users: users
+        });
       });
     });
-};
+}
 
 /*
 module.exports.home2 = function(req, res){

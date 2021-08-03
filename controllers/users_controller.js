@@ -3,9 +3,25 @@ const passport = require("passport");
 
 //! render the profile page
 module.exports.profile = function(req, res){
-    res.render('users_profile', {
-        title: 'Profile'
+
+    User.findById(req.params.id, (error, user) => {
+        res.render('users_profile', {
+            title: 'User Profile',
+            profile_user: user
+        });
     });
+}
+
+
+//! update the user's data
+module.exports.update = function(req, res){
+    if(req.user.id == req.params.id){
+        User.findByIdAndUpdate(req.params.id, req.body, (error, user) => {
+            return res.redirect('back');
+        });
+    } else {
+        return res.status(401).send('Unauthorized');
+    }
 }
 
 
