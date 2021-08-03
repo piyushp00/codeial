@@ -2,26 +2,12 @@ const passport = require("passport");
 const User = require("../models/user");
 const Post = require("../models/post");
 
-module.exports.home = function (req, res) {
+module.exports.home = async function (req, res) {
   //console.log(req.cookies);
   //res.cookie('user_id', 25);
 
-  /*
-  Post.find({}, function (error, posts) {
-    if (error) {
-      console.log("error in fetching posts from db");
-      return;
-    }
-
-    return res.render("home", {
-      title: "Home",
-      user_posts: posts,
-    });
-  });
-*/
-
   //populate the user of each post
-  Post.find({})
+  let posts = await Post.find({})
     .populate("user")
     .populate({
       path: "comments",
@@ -29,20 +15,19 @@ module.exports.home = function (req, res) {
         path: "user"
       },
     })
-    .exec(function (error, posts) {
+    
+    let users = await User.find({});
 
-      User.find({}, (error, users) => {
-        return res.render("home", {
-          title: "Ghost | Home",
-          user_posts: posts,
-          all_users: users
-        });
-      });
+    return res.render("home", {
+      title: "Ghost | Home",
+      user_posts: posts,
+      all_users: users
     });
 }
 
-/*
-module.exports.home2 = function(req, res){
-    return res.end('<h1> I am the Flash,the fastest man alive </h1>');
-}
-*/
+
+//using then
+// Post.find({}).populate('comments').then(function());
+
+// let posts = Post.find({}).populate('comments).exec();
+// posts.then()
