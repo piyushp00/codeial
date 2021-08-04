@@ -11,6 +11,8 @@ const passportLocal = require("./config/passport-local-strategy");
 const MongoStore = require("connect-mongo");
 const sassMiddleware = require("node-sass-middleware");
 const flash = require('connect-flash');
+const customMware = require('./config/middleware');
+
 
 //! middlewares
   //css preprocessor middleware
@@ -70,6 +72,7 @@ app.use(passport.initialize());
 app.use(passport.session()); //passport also maintains session
 
 app.use(flash()); //for flash messages
+app.use(customMware.setFlash);
 
 //check session cookie present or not
 app.use(passport.setAuthenticatedUser);
