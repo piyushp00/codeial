@@ -17,10 +17,12 @@ module.exports.create = async function (req, res) {
       post.comments.push(comment);
       post.save();
 
+      req.flash('success', 'Comments added!');
       res.redirect("/");
     }
   } catch (err) {
-    console.group("Error", err);
+    req.flash('error', err)
+    //console.log("Error", err);
     return;
   }
 };
@@ -38,8 +40,10 @@ module.exports.destroy = async function (req, res) {
         $pull: { comments: req.params.id },
       });
 
+      req.flash('success', 'Comment deleted!');
       return res.redirect("back");
     } else {
+      req.flash('error', 'You cannot delete this comment!')
       return res.redirect("back");
     }
   } catch (err) {
